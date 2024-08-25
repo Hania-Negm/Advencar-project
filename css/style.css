@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#F2F1F0;
+}
+
+/*Start Header*/
+.main-header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: transparent;
+    padding: 15px;
+}
+
+.top-header{
+    border-bottom: 1px solid #909090;
+}
+
+.contact-us , .bottom-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact , .header-links , .hero-links{
+    display: flex;
+    gap: 32px;
+}
+
+.calling{
+    display: flex;
+    gap: 8px;
+}
+
+.calling span , .header-li a , .first-link-hero , .second-link-hero{
+    color: #313131;
+    font-family: "Poppins", "sans-serif";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.bottom-header{
+    margin-top: 10px;
+}
+
+.social-ul{
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.header-ul{
+    display: flex;
+    gap: 56px;
+    list-style: none;
+}
+
+.header-li a , .brand-li a{
+    text-decoration: none;
+}
+
+.first-link{
+    display: inline-block;
+    min-width: 149px;
+    height: 60px;
+    padding: 8px;
+    border-radius: 32px;
+    color: #F5993C;
+    font-family: "Nunito Sans", "sans-serif";
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 40px;
+}
+
+.first-link:hover{
+    transition: all linear 0.2s;
+    transform: translateY(2px);
+    background-color: #F5993C;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.second-link{
+    display: inline-block;
+    min-width: 149px;
+    height: 60px;
+    padding: 8px;
+    border-radius: 32px;
+    border: 1px solid #F5993C;
+    background-color: #F5993C;
+    color: #FFF;
+    font-family: "Poppins", "sans-serif";
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.second-link:hover{
+    transition: all linear 0.2s;
+    transform: translateY(2px);
+    background: transparent;
+    color:#F5993C;
+}
+
+.menu {
+    background: transparent;
+    border: 0;
+    display: none;
+}
+  
+.menu svg{
+    width: 48px;
+    height: 48px;
+}
+
+@media(max-width: 1133.40px){
+    nav , .top-header{display: none;}
+    .menu{display: block;}
+    .main-header{background-color: #FFF;}
+}
+
+@media(max-width: 610px){
+    .header-links{display: none;}
+}
+/*End Header*/
+
+/*Start Hero Section*/
+.hero-section{
+    padding: 50px 15px;
+}
+
+.hero-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    max-width: 784px;
+}
+
+.hero-heading h1{
+    color:#313131;
+    font-family: "Bebas Neue", "sans-serif";
+    font-size: 96px;
+    font-weight: 400;
+}
+
+.hero-heading p{
+    color: #909090;
+    font-family:" Poppins", "sans-serif";
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.first-link-hero{
+    display: inline-block;
+    width: 149px;
+    height: 60px;
+    padding: 8px;
+    border-radius: 32px;
+    border: 1px solid #313131;
+    background: transparent;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.first-link-hero:hover{
+    transition: all linear 0.2s;
+    transform: translateY(4px);
+    background: transparent;
+    color:#FFF;
+    background-color: #313131;
+}
+
+.second-link-hero{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 187px;
+    height: 60px;
+    padding: 8px;
+    border-radius: 32px;
+    background: transparent;
+    text-align: center;
+    line-height: 40px;
+    border: 0;
+}
+
+.second-link-hero a{
+    background-color: #FFF;
+    border-radius: 50%;
+    text-decoration: none;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-link-hero:hover{
+    transition: all linear 0.2s;
+    transform: translateY(4px);
+    background: transparent;
+    color:#FFF;
+    background-color: #313131;
+}
+
+.hero-section .over-flow{
+    overflow: hidden;
+}
+
+.hero-section .col-6 img{
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width: 926px){
+    .hero-section .row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .hero-section .col-6{
+        width: 100%;
+    }
+
+    .hero-heading{
+        text-align: center;
+    }
+
+    .hero-heading h1{
+        font-size: 48px;
+    }
+
+    .hero-links{
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .first-link-hero , .second-link-hero{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .brand-ul{
+        flex-direction: column;
+    }
+}
+/*End Hero Section*/
+
+.brand-section{
+    background: #FFF;
+    padding: 50px 0;
+}
+.brand-ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
